@@ -404,6 +404,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 --autoStart
 awful.spawn.with_shell("picom")
 awful.spawn.with_shell("nitrogen --restore")
+awful.spawn.with_shell("polybar")
 
 --configuration
 beautiful.useless_gap = 5
