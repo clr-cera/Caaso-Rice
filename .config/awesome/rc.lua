@@ -93,7 +93,7 @@ awful.screen.connect_for_each_screen(function(s)
 
 
     -- Each screen has its own tag table.
-    awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
+    awful.tag({ "1", "2", "3", "4", "5" }, s, awful.layout.layouts[1])
 
 
 
@@ -404,7 +404,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 --autoStart
 awful.spawn.with_shell("picom")
 awful.spawn.with_shell("nitrogen --restore")
-awful.spawn.with_shell("polybar")
+awful.spawn.with_shell("polybar left & polybar middle & polybar right")
 
 --configuration
 beautiful.useless_gap = 5
